@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h7ymuzsV3rw=",
+  "dgSpecHash": "in6rKWmWtJk=",
   "success": true,
-  "projectFilePath": "D:\\С#\\LavrentevKT3122lb1\\LavrentevKT3122lb1.csproj",
+  "projectFilePath": "C:\\Users\\Fosters PC\\Source\\Repos\\Lavrentev-Sergey-KT-31-22\\LavrentevKT3122lb1\\LavrentevKT3122lb1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fosters PC\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Fosters PC\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

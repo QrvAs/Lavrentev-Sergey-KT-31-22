@@ -56,9 +56,6 @@ namespace LavrentevKT3122lb1.Database.Configurations
                   .HasDatabaseName($"idx_{TableName}_name")
                   .IsUnique();
 
-   
-            builder.Navigation(p => p.Teachers)
-                  .AutoInclude();
         }
     }
 

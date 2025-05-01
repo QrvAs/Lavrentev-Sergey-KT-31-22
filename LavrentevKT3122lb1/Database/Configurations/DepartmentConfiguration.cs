@@ -48,8 +48,7 @@ namespace LavrentevKT3122lb1.Database.Configurations
             builder.HasIndex(p => p.HeadId)
                 .HasDatabaseName($"idx_{TableName}_f_head_id");
 
-            builder.Navigation(d => d.Head)
-                .AutoInclude();
+
         }
     }
 

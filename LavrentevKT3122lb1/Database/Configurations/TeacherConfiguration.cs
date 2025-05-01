@@ -94,14 +94,7 @@ namespace LavrentevKT3122lb1.Database.Configurations
             builder.HasIndex(p => p.AcademicDegreeId)
                 .HasDatabaseName($"idx_{TableName}_f_degree_id");
 
-            builder.Navigation(t => t.Department)
-                .AutoInclude();
 
-            builder.Navigation(t => t.Position)
-                .AutoInclude();
-
-            builder.Navigation(t => t.AcademicDegree)
-                .AutoInclude();
         }
     }
 }

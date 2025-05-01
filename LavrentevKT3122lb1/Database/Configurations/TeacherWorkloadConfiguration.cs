@@ -63,11 +63,6 @@ namespace LavrentevKT3122lb1.Database.Configurations
                 .HasDatabaseName($"idx_{TableName}_teacher_discipline_unique")
                 .IsUnique();
 
-            builder.Navigation(tw => tw.Teacher)
-                .AutoInclude();
-
-            builder.Navigation(tw => tw.Discipline)
-                .AutoInclude();
         }
     }
 }

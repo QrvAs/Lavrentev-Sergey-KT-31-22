@@ -1,7 +1,9 @@
 using LavrentevKT3122lb1.Database;
+using LavrentevKT3122lb1.Extensions;
 using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
+using System.Text.Json.Serialization;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +24,15 @@ try
 
     builder.Services.AddDbContext<TeacherDbContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("TeacherDbConnection")));
+   
+    builder.Services.AddDbServices();
+
+    builder.Services.AddControllers()
+        .AddJsonOptions(options =>
+        {
+            options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+            options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+        });
 
     var app = builder.Build();
 
