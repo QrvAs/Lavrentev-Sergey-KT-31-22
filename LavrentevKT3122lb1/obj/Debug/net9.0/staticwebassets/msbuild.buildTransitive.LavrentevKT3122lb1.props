@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\LavrentevKT3122lb1.props" />
+</Project>
