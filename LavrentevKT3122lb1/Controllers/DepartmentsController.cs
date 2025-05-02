@@ -103,5 +103,11 @@ namespace LavrentevKT3122lb1.Controllers
 
             return Ok(department);
         }
+
+            [HttpGet("error")]
+            public IActionResult TriggerError()
+            {
+                throw new Exception("Это тестовое исключение для проверки middleware");
+            }
     }
 }

@@ -57,6 +57,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "LavrentevKT3122lb1.Controllers.DepartmentsController",
+    "Method": "TriggerError",
+    "RelativePath": "api/Departments/error",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "LavrentevKT3122lb1.Controllers.LavrentevKT3122lb1.Controllers.TeachersController",
     "Method": "GetTeachers",
     "RelativePath": "api/Teachers",

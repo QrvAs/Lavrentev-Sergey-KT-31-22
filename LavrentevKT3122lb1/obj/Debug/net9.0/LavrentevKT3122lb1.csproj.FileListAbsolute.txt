@@ -340,3 +340,4 @@ C:\Users\Fosters PC\Source\Repos\Lavrentev-Sergey-KT-31-22\LavrentevKT3122lb1\ob
 C:\Users\Fosters PC\Source\Repos\Lavrentev-Sergey-KT-31-22\LavrentevKT3122lb1\obj\Debug\net9.0\LavrentevKT3122lb1.pdb
 C:\Users\Fosters PC\Source\Repos\Lavrentev-Sergey-KT-31-22\LavrentevKT3122lb1\obj\Debug\net9.0\LavrentevKT3122lb1.genruntimeconfig.cache
 C:\Users\Fosters PC\Source\Repos\Lavrentev-Sergey-KT-31-22\LavrentevKT3122lb1\obj\Debug\net9.0\ref\LavrentevKT3122lb1.dll
+C:\Users\Fosters PC\Source\Repos\Lavrentev-Sergey-KT-31-22\LavrentevKT3122lb1\bin\Debug\net9.0\WireMock.Net.Abstractions.dll

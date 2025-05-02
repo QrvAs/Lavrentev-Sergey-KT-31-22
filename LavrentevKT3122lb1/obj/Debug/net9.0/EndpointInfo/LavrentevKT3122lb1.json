@@ -105,6 +105,18 @@
         }
       }
     },
+    "/api/Departments/error": {
+      "get": {
+        "tags": [
+          "Departments"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Teachers": {
       "get": {
         "tags": [
@@ -258,26 +270,26 @@
       "AcademicDegree": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "name": {
+          "Name": {
             "type": "string",
             "nullable": true
           },
-          "isDeleted": {
+          "IsDeleted": {
             "type": "boolean"
           },
-          "createdAt": {
+          "CreatedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "updatedAt": {
+          "UpdatedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "teachers": {
+          "Teachers": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Teacher"
@@ -290,11 +302,11 @@
       "AcademicDegreeDto": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "name": {
+          "Name": {
             "type": "string",
             "nullable": true
           }
@@ -304,38 +316,38 @@
       "Department": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "name": {
+          "Name": {
             "type": "string",
             "nullable": true
           },
-          "foundationDate": {
+          "FoundationDate": {
             "type": "string",
             "format": "date-time"
           },
-          "isDeleted": {
+          "IsDeleted": {
             "type": "boolean"
           },
-          "createdAt": {
+          "CreatedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "updatedAt": {
+          "UpdatedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "headId": {
+          "HeadId": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "head": {
+          "Head": {
             "$ref": "#/components/schemas/Teacher"
           },
-          "teachers": {
+          "Teachers": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Teacher"
@@ -348,23 +360,23 @@
       "DepartmentShortDto": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "name": {
+          "Name": {
             "type": "string",
             "nullable": true
           },
-          "foundationDate": {
+          "FoundationDate": {
             "type": "string",
             "format": "date-time"
           },
-          "teachersCount": {
+          "TeachersCount": {
             "type": "integer",
             "format": "int32"
           },
-          "head": {
+          "Head": {
             "$ref": "#/components/schemas/TeacherShortDto"
           }
         },
@@ -373,30 +385,30 @@
       "Discipline": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "name": {
+          "Name": {
             "type": "string",
             "nullable": true
           },
-          "code": {
+          "Code": {
             "type": "string",
             "nullable": true
           },
-          "isDeleted": {
+          "IsDeleted": {
             "type": "boolean"
           },
-          "createdAt": {
+          "CreatedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "updatedAt": {
+          "UpdatedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "workloads": {
+          "Workloads": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/TeacherWorkload"
@@ -409,15 +421,15 @@
       "DisciplineDto": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "name": {
+          "Name": {
             "type": "string",
             "nullable": true
           },
-          "code": {
+          "Code": {
             "type": "string",
             "nullable": true
           }
@@ -427,26 +439,26 @@
       "Position": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "name": {
+          "Name": {
             "type": "string",
             "nullable": true
           },
-          "isDeleted": {
+          "IsDeleted": {
             "type": "boolean"
           },
-          "createdAt": {
+          "CreatedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "updatedAt": {
+          "UpdatedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "teachers": {
+          "Teachers": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Teacher"
@@ -459,11 +471,11 @@
       "PositionDto": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "name": {
+          "Name": {
             "type": "string",
             "nullable": true
           }
@@ -473,65 +485,65 @@
       "Teacher": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "firstName": {
+          "FirstName": {
             "type": "string",
             "nullable": true
           },
-          "lastName": {
+          "LastName": {
             "type": "string",
             "nullable": true
           },
-          "middleName": {
+          "MiddleName": {
             "type": "string",
             "nullable": true
           },
-          "birthDate": {
+          "BirthDate": {
             "type": "string",
             "format": "date-time",
             "nullable": true
           },
-          "hireDate": {
+          "HireDate": {
             "type": "string",
             "format": "date-time"
           },
-          "isDeleted": {
+          "IsDeleted": {
             "type": "boolean"
           },
-          "createdAt": {
+          "CreatedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "updatedAt": {
+          "UpdatedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "departmentId": {
+          "DepartmentId": {
             "type": "integer",
             "format": "int32"
           },
-          "positionId": {
+          "PositionId": {
             "type": "integer",
             "format": "int32"
           },
-          "academicDegreeId": {
+          "AcademicDegreeId": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "department": {
+          "Department": {
             "$ref": "#/components/schemas/Department"
           },
-          "position": {
+          "Position": {
             "$ref": "#/components/schemas/Position"
           },
-          "academicDegree": {
+          "AcademicDegree": {
             "$ref": "#/components/schemas/AcademicDegree"
           },
-          "workloads": {
+          "Workloads": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/TeacherWorkload"
@@ -544,35 +556,35 @@
       "TeacherCreateDto": {
         "type": "object",
         "properties": {
-          "firstName": {
+          "FirstName": {
             "type": "string",
             "nullable": true
           },
-          "lastName": {
+          "LastName": {
             "type": "string",
             "nullable": true
           },
-          "middleName": {
+          "MiddleName": {
             "type": "string",
             "nullable": true
           },
-          "birthDate": {
+          "BirthDate": {
             "type": "string",
             "format": "date-time"
           },
-          "hireDate": {
+          "HireDate": {
             "type": "string",
             "format": "date-time"
           },
-          "departmentId": {
+          "DepartmentId": {
             "type": "integer",
             "format": "int32"
           },
-          "positionId": {
+          "PositionId": {
             "type": "integer",
             "format": "int32"
           },
-          "academicDegreeId": {
+          "AcademicDegreeId": {
             "type": "integer",
             "format": "int32",
             "nullable": true
@@ -583,32 +595,32 @@
       "TeacherDetailsDto": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "fullName": {
+          "FullName": {
             "type": "string",
             "nullable": true
           },
-          "birthDate": {
+          "BirthDate": {
             "type": "string",
             "format": "date-time"
           },
-          "hireDate": {
+          "HireDate": {
             "type": "string",
             "format": "date-time"
           },
-          "department": {
+          "Department": {
             "$ref": "#/components/schemas/DepartmentShortDto"
           },
-          "position": {
+          "Position": {
             "$ref": "#/components/schemas/PositionDto"
           },
-          "academicDegree": {
+          "AcademicDegree": {
             "$ref": "#/components/schemas/AcademicDegreeDto"
           },
-          "workloads": {
+          "Workloads": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/WorkloadDto"
@@ -621,11 +633,11 @@
       "TeacherShortDto": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "fullName": {
+          "FullName": {
             "type": "string",
             "nullable": true
           }
@@ -635,45 +647,45 @@
       "TeacherWorkload": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "hours": {
+          "Hours": {
             "type": "integer",
             "format": "int32"
           },
-          "semester": {
+          "Semester": {
             "type": "integer",
             "format": "int32"
           },
-          "year": {
+          "Year": {
             "type": "integer",
             "format": "int32"
           },
-          "isDeleted": {
+          "IsDeleted": {
             "type": "boolean"
           },
-          "createdAt": {
+          "CreatedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "updatedAt": {
+          "UpdatedAt": {
             "type": "string",
             "format": "date-time"
           },
-          "teacherId": {
+          "TeacherId": {
             "type": "integer",
             "format": "int32"
           },
-          "disciplineId": {
+          "DisciplineId": {
             "type": "integer",
             "format": "int32"
           },
-          "teacher": {
+          "Teacher": {
             "$ref": "#/components/schemas/Teacher"
           },
-          "discipline": {
+          "Discipline": {
             "$ref": "#/components/schemas/Discipline"
           }
         },
@@ -682,19 +694,19 @@
       "WorkloadDto": {
         "type": "object",
         "properties": {
-          "hours": {
+          "Hours": {
             "type": "integer",
             "format": "int32"
           },
-          "semester": {
+          "Semester": {
             "type": "integer",
             "format": "int32"
           },
-          "year": {
+          "Year": {
             "type": "integer",
             "format": "int32"
           },
-          "discipline": {
+          "Discipline": {
             "$ref": "#/components/schemas/DisciplineDto"
           }
         },
