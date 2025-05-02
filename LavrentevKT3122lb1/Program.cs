@@ -1,5 +1,6 @@
 using LavrentevKT3122lb1.Database;
 using LavrentevKT3122lb1.Extensions;
+using LavrentevKT3122lb1.Middlewares;
 using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
@@ -42,6 +43,7 @@ try
         app.UseSwagger();
         app.UseSwaggerUI();
     }
+    app.UseMiddleware<ExceptionHandlerMiddleware>();
 
     app.UseAuthorization();
 
