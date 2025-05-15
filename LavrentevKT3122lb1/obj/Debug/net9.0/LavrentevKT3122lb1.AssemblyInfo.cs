@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LavrentevKT3122lb1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37be0839ea76016a17e530b212a28d48e2df6055")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a6305865f851a3ce6367ed4e0275ba25bd1cbf1")]
 [assembly: System.Reflection.AssemblyProductAttribute("LavrentevKT3122lb1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LavrentevKT3122lb1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
